@@ -1,6 +1,8 @@
 // All of the app's pretend characters and quotes live here.
 // Change a name, image, or quote here and it updates everywhere.
 
+const image = (filename) => `${import.meta.env.BASE_URL}images/${filename}`
+
 export const classicCharacters = [
   {
     id: 0,
@@ -112,7 +114,7 @@ export const editionCharacters = [
   {
     id: 0,
     name: "Chef Pizzaiolo Gigante",
-    image: "/images/chef-pizzaiolo.jpg",
+    image: image("chef-pizzaiolo.jpg"),
     iconEmoji: "👨‍🍳🍕",
     origin: "Napoli Sacred Fire Ovens",
     rarity: "DOUGH CHIEF MYTHIC",
@@ -127,7 +129,7 @@ export const editionCharacters = [
   {
     id: 1,
     name: "Muscular Espresso Maestro",
-    image: "/images/espresso-maestro.jpg",
+    image: image("espresso-maestro.jpg"),
     iconEmoji: "☕💥",
     origin: "Milan High-Voltage Barista Lab",
     rarity: "CAFFEINE OVERDRIVE",
@@ -142,7 +144,7 @@ export const editionCharacters = [
   {
     id: 2,
     name: "Don Meatballo Corleone",
-    image: "/images/don-meatballo.jpg",
+    image: image("don-meatballo.jpg"),
     iconEmoji: "🍝👑",
     origin: "Underground Marinara Vaults",
     rarity: "MARINARA GODFATHER RARE",
@@ -157,7 +159,7 @@ export const editionCharacters = [
   {
     id: 3,
     name: "Cannoli Supreme Rizzler",
-    image: "/images/cannoli-supreme.jpg",
+    image: image("cannoli-supreme.jpg"),
     iconEmoji: "🥖🕶️",
     origin: "Palermo Street Carnival Syndicate",
     rarity: "DISCO CONFETTI LEGENDARY",
